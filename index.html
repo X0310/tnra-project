@@ -3,68 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TNRA爱心驿站 - 首页</title>
+    <title>TNRA爱心驿站 - 以商养善新模式</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .active-tab { color: #f97316; font-weight: bold; }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
-<body class="bg-gray-50 pb-24 font-sans">
-    <header class="bg-white p-4 flex justify-between items-center sticky top-0 z-10 shadow-sm">
-        <h1 class="text-xl font-extrabold text-gray-800 tracking-tight">TNRA爱心驿站</h1>
-        <div class="bg-gray-100 rounded-full px-4 py-1 flex items-center">
-            <span class="text-gray-400 text-sm">🔍 搜索猫咪...</span>
+<body class="bg-slate-50 pb-24 font-sans text-slate-800">
+
+    <header class="bg-white p-4 sticky top-0 z-50 shadow-sm flex items-center justify-between">
+        <div class="flex items-center gap-2">
+            <div class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center text-white font-bold">TN</div>
+            <h1 class="text-lg font-black tracking-tighter">TNRA 爱心驿站</h1>
+        </div>
+        <div class="bg-slate-100 rounded-full px-4 py-2 flex items-center w-1/2">
+            <span class="text-xs text-slate-400">🔍 搜索猫咪档案...</span>
         </div>
     </header>
 
-    <div class="grid grid-cols-4 gap-2 bg-white p-6 mb-3">
-        <a href="adopt.html" class="flex flex-col items-center group">
-            <div class="w-12 h-12 bg-orange-100 rounded-2xl flex items-center justify-center group-active:scale-95 transition-transform">🐾</div>
-            <span class="text-xs mt-2 text-gray-600">领养猫咪</span>
+    <section class="grid grid-cols-4 gap-4 p-6 bg-white animate__animated animate__fadeIn">
+        <a href="adopt.html" class="flex flex-col items-center">
+            <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center mb-2 shadow-inner">🐾</div>
+            <span class="text-[11px] font-medium">领养程序</span>
         </a>
-        <div class="flex flex-col items-center opacity-50">
-            <div class="w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center">💬</div>
-            <span class="text-xs mt-2 text-gray-600">社区互动</span>
-        </div>
-        <div class="flex flex-col items-center opacity-50">
-            <div class="w-12 h-12 bg-green-100 rounded-2xl flex items-center justify-center">📊</div>
-            <span class="text-xs mt-2 text-gray-600">公益公示</span>
-        </div>
-        <a href="diary.html" class="flex flex-col items-center group">
-            <div class="w-12 h-12 bg-purple-100 rounded-2xl flex items-center justify-center group-active:scale-95 transition-transform">📔</div>
-            <span class="text-xs mt-2 text-gray-600">我的日记</span>
+        <a href="diary.html" class="flex flex-col items-center">
+            <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-2 shadow-inner">📔</div>
+            <span class="text-[11px] font-medium">数字化档案</span>
         </a>
-    </div>
+        <a href="business.html" class="flex flex-col items-center">
+            <div class="w-12 h-12 bg-green-100 text-green-600 rounded-2xl flex items-center justify-center mb-2 shadow-inner">💰</div>
+            <span class="text-[11px] font-medium">以商养善</span>
+        </a>
+        <a href="volunteer.html" class="flex flex-col items-center">
+            <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center mb-2 shadow-inner">🤝</div>
+            <span class="text-[11px] font-medium">志愿者申请</span>
+        </a>
+    </section>
 
-    <div class="px-4 mb-6">
-        <div class="bg-orange-500 rounded-[2rem] p-6 text-white relative overflow-hidden shadow-xl shadow-orange-200">
-            <div class="relative z-10">
-                <span class="bg-white/20 px-3 py-1 rounded-full text-[10px] font-bold">今日推荐</span>
-                <h2 class="text-2xl font-black mt-2">布丁的故事</h2>
-                <p class="text-sm opacity-90 mt-1">从流浪到家的温暖旅程</p>
-                <button class="bg-white text-orange-500 mt-4 px-6 py-2 rounded-full text-sm font-bold shadow-lg">查看详情</button>
+    <main class="p-4 space-y-4">
+        <div class="bg-gradient-to-br from-orange-400 to-orange-600 rounded-[2.5rem] p-6 text-white shadow-xl shadow-orange-200 relative overflow-hidden">
+            <h2 class="text-xl font-bold">正在进行的救助 (TNRA模式)</h2>
+            <p class="text-xs opacity-80 mt-1 italic">正在跑通标准化闭环：抓捕-绝育-驯化-领养</p>
+            <div class="mt-6 flex items-center gap-4">
+                <div class="bg-white/20 backdrop-blur-md rounded-2xl p-3 flex-1">
+                    <p class="text-[10px] opacity-70">本月救助</p>
+                    <p class="text-lg font-bold">12 只</p>
+                </div>
+                <div class="bg-white/20 backdrop-blur-md rounded-2xl p-3 flex-1">
+                    <p class="text-[10px] opacity-70">成功领养</p>
+                    <p class="text-lg font-bold">5 只</p>
+                </div>
             </div>
-            <div class="absolute right-[-10%] bottom-[-10%] w-40 h-40 bg-white/10 rounded-full blur-2xl"></div>
         </div>
-    </div>
 
-    <nav class="fixed bottom-0 left-0 right-0 bg-white border-t flex justify-around items-center h-20 px-6 shadow-[0_-5px_20px_rgba(0,0,0,0.05)]">
-        <a href="index.html" class="flex flex-col items-center active-tab">
-            <span class="text-2xl">🏠</span>
-            <span class="text-[10px] mt-1">首页</span>
-        </a>
-        <a href="adopt.html" class="flex flex-col items-center text-gray-400">
-            <span class="text-2xl">📂</span>
-            <span class="text-[10px] mt-1">档案</span>
-        </a>
-        <a href="diary.html" class="flex flex-col items-center text-gray-400">
-            <span class="text-2xl">☁️</span>
-            <span class="text-[10px] mt-1">云养</span>
-        </a>
-        <div class="flex flex-col items-center text-gray-400">
-            <span class="text-2xl">⚙️</span>
-            <span class="text-[10px] mt-1">设置</span>
+        <h3 class="font-bold text-lg px-2">项目动态</h3>
+        <div class="space-y-3">
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-slate-100 flex gap-4">
+                <div class="w-20 h-20 bg-slate-200 rounded-2xl flex-shrink-0"></div>
+                <div>
+                    <h4 class="font-bold text-sm leading-tight">首个实体“爱心驿站”选址公示</h4>
+                    <p class="text-[10px] text-slate-400 mt-2">结合商业服务反哺公益，降低单只救助成本...</p>
+                </div>
+            </div>
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-slate-100 flex gap-4">
+                <div class="w-20 h-20 bg-slate-200 rounded-2xl flex-shrink-0"></div>
+                <div>
+                    <h4 class="font-bold text-sm leading-tight">《TNRA标准化操作手册》V1.0发布</h4>
+                    <p class="text-[10px] text-slate-400 mt-2">确保从救助到回归家庭的每一个环节都有据可查...</p>
+                </div>
+            </div>
         </div>
+    </main>
+
+    <nav class="fixed bottom-0 left-0 right-0 h-20 bg-white/80 backdrop-blur-md border-t border-slate-100 flex justify-around items-center px-6">
+        <a href="index.html" class="flex flex-col items-center text-orange-500">
+            <span class="text-xl">🏠</span>
+            <span class="text-[10px] font-bold mt-1">首页</span>
+        </a>
+        <a href="adopt.html" class="flex flex-col items-center text-slate-400">
+            <span class="text-xl">📊</span>
+            <span class="text-[10px] mt-1">档案库</span>
+        </a>
+        <a href="diary.html" class="flex flex-col items-center text-slate-400">
+            <span class="text-xl">📅</span>
+            <span class="text-[10px] mt-1">云养日记</span>
+        </a>
+        <a href="settings.html" class="flex flex-col items-center text-slate-400">
+            <span class="text-xl">👤</span>
+            <span class="text-[10px] mt-1">我的</span>
+        </a>
     </nav>
 </body>
 </html>
