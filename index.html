@@ -3,32 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TNRA 爱心驿站 - 首页</title>
-    <link rel="stylesheet" href="style.css">
+    <title>TNRA爱心驿站 - 首页</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .active-tab { color: #f97316; font-weight: bold; }
+    </style>
 </head>
-<body>
-    <header>
-        <h1>TNRA 爱心驿站</h1>
-    </header>
-    <main>
-        <div class="top-nav">
-            <a href="adopt.html" class="nav-icon">
-                <img src="images/adopt-icon.png" alt="领养">
-                <span>领养</span>
-            </a>
-            <a href="diary.html" class="nav-icon">
-                <img src="images/diary-icon.png" alt="云养">
-                <span>云养</span>
-            </a>
+<body class="bg-gray-50 pb-24 font-sans">
+    <header class="bg-white p-4 flex justify-between items-center sticky top-0 z-10 shadow-sm">
+        <h1 class="text-xl font-extrabold text-gray-800 tracking-tight">TNRA爱心驿站</h1>
+        <div class="bg-gray-100 rounded-full px-4 py-1 flex items-center">
+            <span class="text-gray-400 text-sm">🔍 搜索猫咪...</span>
         </div>
-    </main>
-    <footer>
-        <nav class="bottom-nav">
-            <a href="index.html" class="active">首页</a>
-            <a href="adopt.html">档案</a>
-            <a href="diary.html">云养</a>
-            <a href="#">设置</a>
-        </nav>
-    </footer>
+    </header>
+
+    <div class="grid grid-cols-4 gap-2 bg-white p-6 mb-3">
+        <a href="adopt.html" class="flex flex-col items-center group">
+            <div class="w-12 h-12 bg-orange-100 rounded-2xl flex items-center justify-center group-active:scale-95 transition-transform">🐾</div>
+            <span class="text-xs mt-2 text-gray-600">领养猫咪</span>
+        </a>
+        <div class="flex flex-col items-center opacity-50">
+            <div class="w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center">💬</div>
+            <span class="text-xs mt-2 text-gray-600">社区互动</span>
+        </div>
+        <div class="flex flex-col items-center opacity-50">
+            <div class="w-12 h-12 bg-green-100 rounded-2xl flex items-center justify-center">📊</div>
+            <span class="text-xs mt-2 text-gray-600">公益公示</span>
+        </div>
+        <a href="diary.html" class="flex flex-col items-center group">
+            <div class="w-12 h-12 bg-purple-100 rounded-2xl flex items-center justify-center group-active:scale-95 transition-transform">📔</div>
+            <span class="text-xs mt-2 text-gray-600">我的日记</span>
+        </a>
+    </div>
+
+    <div class="px-4 mb-6">
+        <div class="bg-orange-500 rounded-[2rem] p-6 text-white relative overflow-hidden shadow-xl shadow-orange-200">
+            <div class="relative z-10">
+                <span class="bg-white/20 px-3 py-1 rounded-full text-[10px] font-bold">今日推荐</span>
+                <h2 class="text-2xl font-black mt-2">布丁的故事</h2>
+                <p class="text-sm opacity-90 mt-1">从流浪到家的温暖旅程</p>
+                <button class="bg-white text-orange-500 mt-4 px-6 py-2 rounded-full text-sm font-bold shadow-lg">查看详情</button>
+            </div>
+            <div class="absolute right-[-10%] bottom-[-10%] w-40 h-40 bg-white/10 rounded-full blur-2xl"></div>
+        </div>
+    </div>
+
+    <nav class="fixed bottom-0 left-0 right-0 bg-white border-t flex justify-around items-center h-20 px-6 shadow-[0_-5px_20px_rgba(0,0,0,0.05)]">
+        <a href="index.html" class="flex flex-col items-center active-tab">
+            <span class="text-2xl">🏠</span>
+            <span class="text-[10px] mt-1">首页</span>
+        </a>
+        <a href="adopt.html" class="flex flex-col items-center text-gray-400">
+            <span class="text-2xl">📂</span>
+            <span class="text-[10px] mt-1">档案</span>
+        </a>
+        <a href="diary.html" class="flex flex-col items-center text-gray-400">
+            <span class="text-2xl">☁️</span>
+            <span class="text-[10px] mt-1">云养</span>
+        </a>
+        <div class="flex flex-col items-center text-gray-400">
+            <span class="text-2xl">⚙️</span>
+            <span class="text-[10px] mt-1">设置</span>
+        </div>
+    </nav>
 </body>
 </html>
