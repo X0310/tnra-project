@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TNRA 爱心驿站</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 overflow-hidden"> <header class="bg-white p-4 shadow-sm h-16 flex items-center justify-between sticky top-0 z-50">
+        <h1 class="text-xl font-black text-orange-500">TNRA 爱心驿站</h1>
+        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center">🔍</div>
+    </header>
+
+    <main class="w-full" style="height: calc(100vh - 144px);"> 
+        <iframe src="index_content.html" name="contentFrame" frameborder="0" class="w-full h-full"></iframe>
+    </main>
+
+    <nav class="fixed bottom-0 left-0 right-0 h-20 bg-white border-t flex justify-around items-center px-6 shadow-lg">
+        <a href="index_content.html" target="contentFrame" class="flex flex-col items-center group">
+            <span class="text-2xl group-active:scale-90 transition-transform">🏠</span>
+            <span class="text-[10px] mt-1">首页</span>
+        </a>
+        <a href="adopt_content.html" target="contentFrame" class="flex flex-col items-center group text-gray-400">
+            <span class="text-2xl group-active:scale-90 transition-transform">📂</span>
+            <span class="text-[10px] mt-1">档案</span>
+        </a>
+        <a href="diary_content.html" target="contentFrame" class="flex flex-col items-center group text-gray-400">
+            <span class="text-2xl group-active:scale-90 transition-transform">📅</span>
+            <span class="text-[10px] mt-1">云养</span>
+        </a>
+    </nav>
+
+</body>
+</html>
